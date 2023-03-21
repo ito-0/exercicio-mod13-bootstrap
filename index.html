@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-0rnSTP/gHw+ZaUGgZJ0swJ9ZO1gsC0y0Y3fi+o6bwrJ6/iw2s1Edm6fR+vrG9jzL" crossorigin="anonymous">
+    <link rel="stylesheet" href="./jsmod13/main.css">
+</head>
+<body>
+    <header id="cabecalho" class="bg-dark text-light fixed-top">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logo">
+                    <a href="#home"><img src="https://cdn.pixabay.com/photo/2017/09/23/13/48/sale-2778918_960_720.png" alt="Nome da loja"></a>
+                </div>
+                <button type="button" class="navbar-toggler bg-secondary" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end text-light" id="menu">
+                    <ul class="nav navbar-nav nav-pills bg-dark">
+                        <li class="nav-item">
+                            <a class="nav-link ms-3 text-light active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-3 text-light" href="#inicio">Ínicio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link ms-3 text-light" href="#produtos">Produtos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link ms-3 text-light" href="#promocoes">Promoções</a>
+                        </li>
+                        <li>
+                            <a class="nav-link ms-3 text-light" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="home" class="bg-secondary text-white py-4">
+            <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2022/10/04/14/27/cat-7498364_960_720.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>Foto de um gato</h3>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/03/12/17/35/hare-7847442_960_720.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>Foto de um coelho</h3>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/01/11/13/46/chick-7711698_960_720.jpg" alt="">
+                        <div class="carousel-caption">
+                            <h3>Foto de um pintinho</h3>
+                        </div>
+                    </div>
+                </div>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </section>
+        <section id="inicio" class="bg-secondary text-light">
+            <h2 class="border-dark border-top border-bottom border-4 mb-4 bg-dark w-100">Ínicio</h2>
+            <div class="container">
+                <div class="card bg-dark text-white shadow mb-4 border-0">
+                    <img src="./imagens/architecture-1868667_960_720.jpg" class="card-img w-100">
+                    <div class="card-body flex-row card-img-overlay shadow-lg">
+                        <h5 class="card-title">Título do Card</h5>
+                        <div class="card-text">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis massa ut ipsum sagittis, a faucibus augue lacinia. Maecenas facilisis nisi sed elit sodales, quis ornare mi pretium. Integer scelerisque malesuada sapien, eu rutrum elit consectetur quis.</p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn btn-primary">Saiba mais</button>
+                        <button class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">Assunto#1 </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a href="#">Novo usuário</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Novo fornecerdor</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Novo funcionário</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">Assunto#2 </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a href="#">Novo usuário</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Novo fornecerdor</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Novo funcionário</a>
+                            </li>
+                        </ul>
+                        <button class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">Assunto#3 </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item">
+                                <a href="#">Novo usuário</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Novo fornecerdor</a>
+                            </li>
+                            <li class="dropdown-item">
+                                <a href="#">Novo funcionário</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="bg-secondary text-light d-flex flex-column">
+            <h2 class="border-dark border-top border-bottom border-4 mb-4 bg-dark w-100">Produtos</h2>
+            <div class="container">
+                <nav class="nav nav-pills bg-secondary mb-4">
+                    <button class="nav-link bg-dark ms-3 active" type="button" data-bs-toggle="tab" data-bs-target="#aba1">Eletrônicos</button>
+                    <button class="nav-link bg-dark ms-3" type="button" data-bs-toggle="tab" data-bs-target="#aba2">Moda Masculina</button>
+                    <button class="nav-link bg-dark ms-3" type="button" data-bs-toggle="tab" data-bs-target="#aba3">Moda Feminina</button>
+                </nav>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aba1">
+                        <div id="produtos-carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#produtos-carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                                <button type="button" data-bs-target="#produtos-carousel" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#produtos-carousel" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner mb-4">
+                                <div class="carousel-item active">
+                                    <img src="./imagens/code-1076536_960_720.jpg" class="d-block w-100" alt="Produto 1">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Produto 1</h5>
+                                        <p>Descrição do Produto 1</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagens/stock-1863880_960_720.jpg" class="d-block w-100" alt="Produto 2">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Produto 2</h5>
+                                        <p>Descrição do Produto 2</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./imagens/laptop-1478822_960_720.jpg" class="d-block w-100" alt="Produto 3">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Produto 3</h5>
+                                        <p>Descrição do Produto 3</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#produtos-carousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#produtos-carousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Próximo</span>
+                            </button>
+                        </div>
+                    </div>                    
+                    <div class="tab-pane" id="aba2">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4 bg-dark border-0">
+                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/7FB3D5/FFFFFF?text=Produto+1" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 1</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum massa quis nunc tincidunt, vel interdum urna sodales. Sed mattis sem at sapien luctus, eget eleifend augue euismod.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-success mt-4 mx-3 mt-4">Comprar</a>
+                                            <a href="#" class="btn btn-warning mt-4 mx-3 mt-4">Alugar</a>
+                                            <a href="#" class="btn btn-danger mt-4 mx-3 mt-4">Vender</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-4 bg-dark border-0">
+                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/3E3D3D/FFFFFF?text=Produto+2" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 2</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum massa quis nunc tincidunt, vel interdum urna sodales. Sed mattis sem at sapien luctus, eget eleifend augue euismod.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-success mt-4 mx-3 mt-4">Comprar</a>
+                                            <a href="#" class="btn btn-warning mt-4 mx-3 mt-4">Alugar</a>
+                                            <a href="#" class="btn btn-danger mt-4 mx-3 mt-4">Vender</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="aba3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card mb-4 bg-dark border-0">
+                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/7FB3D5/FFFFFF?text=Produto+1" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 1</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum massa quis nunc tincidunt, vel interdum urna sodales. Sed mattis sem at sapien luctus, eget eleifend augue euismod.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-success mt-4 mx-3 mt-4">Comprar</a>
+                                            <a href="#" class="btn btn-warning mt-4 mx-3 mt-4">Alugar</a>
+                                            <a href="#" class="btn btn-danger mt-4 mx-3 mt-4">Vender</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card mb-4 bg-dark border-0">
+                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/3E3D3D/FFFFFF?text=Produto+2" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Produto 2</h5>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum massa quis nunc tincidunt, vel interdum urna sodales. Sed mattis sem at sapien luctus, eget eleifend augue euismod.</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="#" class="btn btn-success mt-4 mx-3 mt-4">Comprar</a>
+                                            <a href="#" class="btn btn-warning mt-4 mx-3 mt-4">Alugar</a>
+                                            <a href="#" class="btn btn-danger mt-4 mx-3 mt-4">Vender</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="promocoes" class="bg-secondary text-white d-flex flex-column">
+            <h2 class="border-dark border-top border-bottom border-4 mb-4 bg-dark w-100">Promoções</h2>
+            <div class="container">
+                <div class="row m-auto">
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card bg-dark h-100">
+                            <img src="https://cdn.pixabay.com/photo/2022/11/03/15/06/cat-7567706_960_720.jpg" alt="" srcset="">
+                            <div class="card-img-overlay ">
+                                <h4 class="card-title">Card do Bootstrap</h4>
+                                <h5 class="card-subtitle">Subtítulo do Card</h5>
+                                <p class="card-text">
+                                    Conheça os Cards do Bootstrap e suas variações
+                                </p>
+                                <div class="card-footer d-flex justify-content-end align-items-end">
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card bg-dark h-100">
+                            <img src="https://cdn.pixabay.com/photo/2022/11/21/16/07/sunset-7607500_960_720.jpg" alt="" srcset="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">Título do card</h4>
+                                <h5 class="card-subtitle">Subtítulo do Card</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem consectetur accusantium ut amet minus error? Molestiae fuga distinctio asperiores cumque
+                                </p>
+                                <div class="card-footer d-flex justify-content-end align-items-end">
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="card bg-dark h-100">
+                            <img src="https://cdn.pixabay.com/photo/2023/01/15/22/55/fern-7721323_960_720.jpg" alt="" srcset="">
+                            <div class="card-img-overlay">
+                                <h4 class="card-title">Título do card</h4>
+                                <h5 class="card-subtitle">Subtítulo do Card</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </p>
+                                <div class="card-footer d-flex justify-content-end align-items-end">
+                                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="bg-secondary text-white d-flex flex-column">
+            <h2 class="border-dark border-top border-bottom border-4 mb-4 bg-dark w-100">Contato</h2>
+            <div class="container mb-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8">
+                        <div class="card custom-card">
+                            <div class="card-header bg-dark">
+                                <h1 class="text-center mb-0">Formulário de Cadastro</h1>
+                            </div>
+                            <div class="card-body bg-dark">
+                                <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome:</label>
+                                    <input type="text" class="form-control border-0 border-bottom border-secondary" id="nome" name="nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">E-mail:</label>
+                                    <input type="email" class="form-control border-0 border-bottom border-secondary" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label">Telefone:</label>
+                                    <input type="tel" class="form-control border-0 border-bottom border-secondary" id="telefone" name="telefone" required>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg w-100">Enviar</button>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="bg-dark">
+        <div class="container d-flex justify-content-between align-items-center py-1 text-light">
+            <div>
+                <ul class="list-unstyled d-flex m-0">
+                    <li>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exemplo-modal">
+                            <p>&#10004;</p>
+                        </button>
+                        <div class="modal" id="exemplo-modal" data-bs-backdrop="static">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-secondary">
+                                    <div class="modal-header">
+                                        <h5>Título da Modal</h5>
+                                        <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, dolorem fuga. Eum hic obcaecati repellendus exercitationem suscipit incidunt totam sunt odio tempora, eius, doloremque excepturi, perspiciatis sequi distinctio dignissimos fugiat?
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <li>
+                            <button class="btn btn-warning btn-sm ms-2" type="button" id="btn-checar-emails">
+                                <p>&#x26A0;&#xFE0F;</p>
+                            </button>
+                        </li>
+                    </li>
+                </ul>
+            </div>
+            <p class="m-0">2023 &copy; Nome da Loja - Todos os direitos reservados</p>
+            <ul class="list-unstyled d-flex m-0">
+                <li>
+                    <a href="">
+                        <img class="w-50" src="./icones/facebook.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="w-50" src="./icones/instagram.png" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="w-50" src="./icones/youtube.png" alt="YouTube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+        
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-4">
+        <div class="toast" id="mensagens-alerta">
+            <header class="toaste-header">
+                <strong>Importante</strong>
+            </header>
+            <div class="toast-body">
+                Vc possui 10 mensagens não lida
+            </div>
+            <div class="mt-2 pt-2 border-top">
+                <button class="btn btn-danger" type="button" data-bs-dismiss="toast">
+                    Descastar
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./jsmod13/main.js"></script>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativadorToast = document.getElementById('btn-checar-emails')
+        const mensagem = document.getElementById('mensagens-alerta')
+
+        if (ativadorToast) {
+            ativadorToast.addEventListener('click', function() {
+                const toast = new bootstrap.Toast(mensagem)
+                toast.show()
+            })
+        }
+    </script>
+    <script>
+    </script>
+</body>
+</html>
