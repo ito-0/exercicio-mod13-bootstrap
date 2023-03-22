@@ -88,7 +88,7 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis massa ut ipsum sagittis, a faucibus augue lacinia. Maecenas facilisis nisi sed elit sodales, quis ornare mi pretium. Integer scelerisque malesuada sapien, eu rutrum elit consectetur quis.</p>
                         </div>
                     </div>
-                    <div class="btn-group">
+                    <div class="btn-group justify-content-center">
                         <button class="btn btn-primary">Saiba mais</button>
                         <button class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">Assunto#1 </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
@@ -102,19 +102,7 @@
                                 <a href="#">Novo funcionário</a>
                             </li>
                         </ul>
-                        <button class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">Assunto#2 </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li class="dropdown-item">
-                                <a href="#">Novo usuário</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#">Novo fornecerdor</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a href="#">Novo funcionário</a>
-                            </li>
-                        </ul>
-                        <button class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">Assunto#3 </button>
+                        <button class="btn btn-dark dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">Assunto#1 </button>
                         <ul class="dropdown-menu dropdown-menu-dark">
                             <li class="dropdown-item">
                                 <a href="#">Novo usuário</a>
@@ -130,14 +118,17 @@
                 </div>
             </div>
         </section>
-        <section id="produtos" class="bg-secondary text-light d-flex flex-column">
+        <section id="produtos" class="bg-secondary text-light">
             <h2 class="border-dark border-top border-bottom border-4 mb-4 bg-dark w-100">Produtos</h2>
             <div class="container">
-                <nav class="nav nav-pills bg-secondary mb-4">
-                    <button class="nav-link bg-dark ms-3 active" type="button" data-bs-toggle="tab" data-bs-target="#aba1">Eletrônicos</button>
-                    <button class="nav-link bg-dark ms-3" type="button" data-bs-toggle="tab" data-bs-target="#aba2">Moda Masculina</button>
-                    <button class="nav-link bg-dark ms-3" type="button" data-bs-toggle="tab" data-bs-target="#aba3">Moda Feminina</button>
-                </nav>
+                <nav class="nav nav-pills bg-secondary mb-4 d-flex flex-column flex-sm-row justify-content-center">
+                    <button class="nav-link col-sm-4 col-md-3 col-lg-auto bg-dark active rounded-0 text-center" type="button" data-bs-toggle="tab" data-bs-target="#aba1">Eletrônicos</button>
+                    <div class="dropdown-divider d-sm-none"></div>
+                    <button class="nav-link col-sm-4 col-md-3 col-lg-auto bg-dark rounded-0 text-center mt-2 mt-sm-0" type="button" data-bs-toggle="tab" data-bs-target="#aba2">Moda Masculina</button>
+                    <div class="dropdown-divider d-sm-none"></div>
+                    <button class="nav-link col-sm-4 col-md-3 col-lg-auto bg-dark rounded-0 text-center mt-2 mt-sm-0" type="button" data-bs-toggle="tab" data-bs-target="#aba3">Moda Feminina</button>
+                  </nav>
+                  
                 <div class="tab-content">
                     <div class="tab-pane active" id="aba1">
                         <div id="produtos-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -215,9 +206,9 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="card mb-4 bg-dark border-0">
-                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/7FB3D5/FFFFFF?text=Produto+1" alt="Card image cap">
+                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/7FB3D5/FFFFFF?text=Produto+3" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">Produto 1</h5>
+                                        <h5 class="card-title">Produto 3</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum massa quis nunc tincidunt, vel interdum urna sodales. Sed mattis sem at sapien luctus, eget eleifend augue euismod.</p>
                                         <div class="d-flex justify-content-center">
                                             <a href="#" class="btn btn-success mt-4 mx-3 mt-4">Comprar</a>
@@ -229,9 +220,9 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="card mb-4 bg-dark border-0">
-                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/3E3D3D/FFFFFF?text=Produto+2" alt="Card image cap">
+                                    <img class="card-img-top" src="https://via.placeholder.com/500x250/3E3D3D/FFFFFF?text=Produto+4" alt="Card image cap">
                                     <div class="card-body">
-                                        <h5 class="card-title">Produto 2</h5>
+                                        <h5 class="card-title">Produto 4</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum massa quis nunc tincidunt, vel interdum urna sodales. Sed mattis sem at sapien luctus, eget eleifend augue euismod.</p>
                                         <div class="d-flex justify-content-center">
                                             <a href="#" class="btn btn-success mt-4 mx-3 mt-4">Comprar</a>
